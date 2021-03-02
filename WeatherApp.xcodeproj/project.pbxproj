@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		52874E3325ECD70D00272FAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52874E3225ECD70D00272FAB /* AppDelegate.swift */; };
 		52874E3525ECD70D00272FAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52874E3425ECD70D00272FAB /* SceneDelegate.swift */; };
-		52874E3725ECD70D00272FAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52874E3625ECD70D00272FAB /* ViewController.swift */; };
 		52874E3A25ECD70D00272FAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52874E3825ECD70D00272FAB /* Main.storyboard */; };
 		52874E3C25ECD70F00272FAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52874E3B25ECD70F00272FAB /* Assets.xcassets */; };
 		52874E3F25ECD70F00272FAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52874E3D25ECD70F00272FAB /* LaunchScreen.storyboard */; };
+		52874E4D25ECE7B300272FAB /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52874E4C25ECE7B300272FAB /* WeatherData.swift */; };
+		52874E5525ED0BE600272FAB /* AddCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52874E5425ED0BE600272FAB /* AddCityViewController.swift */; };
+		52874E5A25ED13B300272FAB /* DataSorse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52874E5925ED13B300272FAB /* DataSorse.swift */; };
+		52874E7125EDA3E500272FAB /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52874E7025EDA3E500272FAB /* WeatherViewController.swift */; };
+		52874E7625EDBF3F00272FAB /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52874E7525EDBF3F00272FAB /* ImageData.swift */; };
+		52874E7C25EE739D00272FAB /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52874E7B25EE739C00272FAB /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52874E2F25ECD70D00272FAB /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52874E3225ECD70D00272FAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52874E3425ECD70D00272FAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		52874E3625ECD70D00272FAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52874E3925ECD70D00272FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52874E3B25ECD70F00272FAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52874E3E25ECD70F00272FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52874E4025ECD70F00272FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52874E4C25ECE7B300272FAB /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		52874E5425ED0BE600272FAB /* AddCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityViewController.swift; sourceTree = "<group>"; };
+		52874E5925ED13B300272FAB /* DataSorse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSorse.swift; sourceTree = "<group>"; };
+		52874E7025EDA3E500272FAB /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		52874E7525EDBF3F00272FAB /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		52874E7B25EE739C00272FAB /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +68,34 @@
 			children = (
 				52874E3225ECD70D00272FAB /* AppDelegate.swift */,
 				52874E3425ECD70D00272FAB /* SceneDelegate.swift */,
-				52874E3625ECD70D00272FAB /* ViewController.swift */,
-				52874E3825ECD70D00272FAB /* Main.storyboard */,
+				52874E8225EE812D00272FAB /* Modell */,
+				52874E8425EE814E00272FAB /* ViewController */,
+				52874E5925ED13B300272FAB /* DataSorse.swift */,
+				52874E7B25EE739C00272FAB /* GradientView.swift */,
 				52874E3B25ECD70F00272FAB /* Assets.xcassets */,
+				52874E3825ECD70D00272FAB /* Main.storyboard */,
 				52874E3D25ECD70F00272FAB /* LaunchScreen.storyboard */,
 				52874E4025ECD70F00272FAB /* Info.plist */,
 			);
 			path = WeatherApp;
+			sourceTree = "<group>";
+		};
+		52874E8225EE812D00272FAB /* Modell */ = {
+			isa = PBXGroup;
+			children = (
+				52874E7525EDBF3F00272FAB /* ImageData.swift */,
+				52874E4C25ECE7B300272FAB /* WeatherData.swift */,
+			);
+			path = Modell;
+			sourceTree = "<group>";
+		};
+		52874E8425EE814E00272FAB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				52874E5425ED0BE600272FAB /* AddCityViewController.swift */,
+				52874E7025EDA3E500272FAB /* WeatherViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +168,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52874E3725ECD70D00272FAB /* ViewController.swift in Sources */,
+				52874E5A25ED13B300272FAB /* DataSorse.swift in Sources */,
+				52874E7125EDA3E500272FAB /* WeatherViewController.swift in Sources */,
+				52874E5525ED0BE600272FAB /* AddCityViewController.swift in Sources */,
 				52874E3325ECD70D00272FAB /* AppDelegate.swift in Sources */,
 				52874E3525ECD70D00272FAB /* SceneDelegate.swift in Sources */,
+				52874E4D25ECE7B300272FAB /* WeatherData.swift in Sources */,
+				52874E7625EDBF3F00272FAB /* ImageData.swift in Sources */,
+				52874E7C25EE739D00272FAB /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
