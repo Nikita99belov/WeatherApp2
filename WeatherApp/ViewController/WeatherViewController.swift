@@ -12,6 +12,7 @@ class WeatherViewController: UIViewController {
     @IBOutlet var backView: UIView!
     @IBOutlet var backImage: UIImageView!
     
+    @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet var termLabel: UILabel!
     @IBOutlet var minTempLabel: UILabel!
     @IBOutlet var windLabel: UILabel!
@@ -23,15 +24,10 @@ class WeatherViewController: UIViewController {
     @IBOutlet var minTempImage: UIImageView!
     
     var citis: String = ""
-    let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.backgroundImage.image =  UIImage(contentsOfFile: "cropped")
-        self.backgroundImage.alpha = 0.9
-        self.view.insertSubview(self.backgroundImage, at: 0)
-        
         dataBack ()
         getWeather(city: citis)
         getImage(city: citis)
@@ -109,9 +105,9 @@ extension WeatherViewController {
                     guard let imageURL = URL(string: stringURL) else {return}
                     guard let imageData = try? Data(contentsOf:imageURL) else {return}
                     
-                    self.backgroundImage.image = UIImage(data: imageData )
-                    self.backgroundImage.alpha = 0.9
-                    self.view.insertSubview(self.backgroundImage, at: 0)
+                    self.backgroundImageView.image = UIImage(data: imageData )
+                    self.backgroundImageView.alpha = 0.9
+                   
                     print(imageData)
                 }
                 

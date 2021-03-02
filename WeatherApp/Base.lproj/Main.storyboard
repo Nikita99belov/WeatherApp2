@@ -130,6 +130,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cropped" translatesAutoresizingMaskIntoConstraints="NO" id="YWT-7q-xSH">
+                                <rect key="frame" x="0.0" y="88" width="428" height="838"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQi-g9-VWP">
                                 <rect key="frame" x="25" y="657" width="378" height="210"/>
                                 <subviews>
@@ -274,7 +277,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yQi-g9-VWP" firstAttribute="leading" secondItem="xhv-g3-lf8" secondAttribute="leading" constant="25" id="27r-7k-PxZ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="YWT-7q-xSH" secondAttribute="bottom" constant="-34" id="6s1-1d-ewe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YWT-7q-xSH" secondAttribute="trailing" constant="-20" id="NEn-cg-fDa"/>
                             <constraint firstItem="xhv-g3-lf8" firstAttribute="bottom" secondItem="yQi-g9-VWP" secondAttribute="bottom" constant="25" id="OEz-XQ-2Mm"/>
+                            <constraint firstItem="YWT-7q-xSH" firstAttribute="leading" secondItem="isA-q8-3qN" secondAttribute="leadingMargin" constant="-20" id="WKy-WG-eb8"/>
+                            <constraint firstItem="YWT-7q-xSH" firstAttribute="top" secondItem="xhv-g3-lf8" secondAttribute="top" id="ZuG-9s-A87"/>
                             <constraint firstItem="xhv-g3-lf8" firstAttribute="trailing" secondItem="yQi-g9-VWP" secondAttribute="trailing" constant="25" id="hjg-Sh-bty"/>
                         </constraints>
                     </view>
@@ -282,6 +289,7 @@
                     <connections>
                         <outlet property="backImage" destination="IvV-iX-09O" id="UdU-IR-jaC"/>
                         <outlet property="backView" destination="yQi-g9-VWP" id="Q2l-nQ-xMp"/>
+                        <outlet property="backgroundImageView" destination="YWT-7q-xSH" id="fhM-kd-DDn"/>
                         <outlet property="maxTempImage" destination="skq-WI-qLS" id="urW-47-QQa"/>
                         <outlet property="maxTempLabel" destination="vvU-Hh-BgC" id="uFP-Zj-DJ3"/>
                         <outlet property="minTempImage" destination="HLO-iL-LjO" id="P0t-Yn-euu"/>
@@ -294,7 +302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="90l-gn-SRO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3731.25" y="86.619718309859152"/>
+            <point key="canvasLocation" x="3730.3738317757006" y="86.177105831533481"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DCh-Us-M6t">
@@ -317,6 +325,7 @@
     </scenes>
     <resources>
         <image name="big-56d03c1aff9367132c0b96dc-56d03cd1ec13a-1bd0f6i" width="2000" height="1125"/>
+        <image name="cropped" width="1384" height="2304"/>
         <image name="kisspng-thermometer-computer-icons-temperature-clip-art-celsius-5ad9e3281ebb23.5047162215242289041259" width="512" height="512"/>
         <image name="kisspng-wind-computer-icons-clip-art-wind-5abcba513943a9.1438410615223179052346" width="900" height="769"/>
         <image name="pikist" width="4608" height="2592"/>
