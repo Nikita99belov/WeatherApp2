@@ -29,7 +29,7 @@
 		3B529319BB05112A1B80B015 /* Pods_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5280D18B25F273000064DB58 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		5280D19725F274F30064DB58 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		52874E2F25ECD70D00272FAB /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52874E2F25ECD70D00272FAB /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = WeatherApp.app; path = "/Users/test/Documents/WeatherApp4/WeatherApp/build/Debug-iphoneos/WeatherApp.app"; sourceTree = "<absolute>"; };
 		52874E3225ECD70D00272FAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52874E3425ECD70D00272FAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		52874E3925ECD70D00272FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,18 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				52874E3125ECD70D00272FAB /* WeatherApp */,
-				52874E3025ECD70D00272FAB /* Products */,
 				B03C82D6D918D7A6144DBE17 /* Pods */,
 				1BC99711A3E5F9331F413215 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		52874E3025ECD70D00272FAB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				52874E2F25ECD70D00272FAB /* WeatherApp.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		52874E3125ECD70D00272FAB /* WeatherApp */ = {
@@ -184,7 +175,7 @@
 				Base,
 			);
 			mainGroup = 52874E2625ECD70D00272FAB;
-			productRefGroup = 52874E3025ECD70D00272FAB /* Products */;
+			productRefGroup = 52874E2625ECD70D00272FAB;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
