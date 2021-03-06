@@ -6,13 +6,17 @@
 //
 
 import UIKit
+protocol SetengViewColorDelegat {
+    
+    func citydelegat (city: City)
+}
 
-class AddCityViewController:  UITableViewController {
+class CityViewController:  UITableViewController {
     
     @IBOutlet var mainImage: UIImageView!
     @IBOutlet var addText: UITextField!
     
-    var cityes = DataSorse.city
+    var cityes : [City] = []
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return cityes.count
@@ -23,28 +27,40 @@ class AddCityViewController:  UITableViewController {
         
         let citys = cityes[indexPath.row]
         var content = cell.defaultContentConfiguration()
-        content.text = citys
+        content.text = citys.name
         cell.contentConfiguration = content
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+          if editingStyle == .delete {
+            cityes.remove(at: indexPath.row)
+              tableView.deleteRows(at: [indexPath], with: .fade)
+          
+           }
+     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        let settingsVC = segue.destination as? SearchViewController 
+        settingsVC?.citisDelegat = self
         if let indexPath = tableView.indexPathForSelectedRow {
             let controller = segue.destination as? WeatherViewController
             let index = cityes[indexPath.row]
-            let replacedCitis = index.replacingOccurrences(of: " ", with: "%20")
-            
+            let replacedCitis = index.name.replacingOccurrences(of: " ", with: "%20")
+            print(index)
             controller!.citis = replacedCitis
-            controller!.title = index
+            print(replacedCitis)
+            controller!.title = index.name
         }
-    }
-    
-    @IBAction func addAction(_ sender: Any) {
-        
-        cityes.append(addText.text ?? "")
-        tableView.reloadData()
-        addText.text = nil
     }
 }
 
+extension CityViewController: SetengViewColorDelegat {
+    func citydelegat(city: City) {
+        guard !cityes.contains(city) else {
+            return
+        }
+        cityes.append(city)
+        tableView.reloadData()
+    }
+}

@@ -6,20 +6,27 @@
 //
 
 import Foundation
-struct WeatherData: Decodable {
-    let main: Main
-    let wind: Wind
-}
-struct Main: Decodable {
-    
-    let temp: Float?
-    let temp_min: Float?
-    let temp_max: Float?
+struct WeatherData {
+    let main: [String: Any]?
+    let wind: [String: Any]?
+    let temp: Double?
+    let tempMax: Double?
+    let tempMin: Double?
+    let speed: Double?
+  
+    init(weatherData: [String: Any]) {
+        main = weatherData ["main"] as? [String: Any]
+        wind = weatherData ["wind"] as? [String: Any]
+        temp = main?["temp"] as? Double
+        tempMax = main?["temp_max"] as? Double
+        tempMin = main?["temp_min"] as? Double
+        speed = wind?["speed"] as? Double
     }
-
-struct Wind: Decodable {
-    let speed : Float?
+    static func getWeather (for value: Any) -> WeatherData? {
+        guard let weathersDat = value as? [String: Any] else {return nil}
+        let weather = WeatherData(weatherData: weathersDat)
+        return weather
+    }
 }
-
 
 
